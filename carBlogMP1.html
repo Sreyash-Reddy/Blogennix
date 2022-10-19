@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini expands footprint in Sweden</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Pacifico&family=Playball&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Spline+Sans+Mono:wght@300;500&display=swap');
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            padding-top: 40px;
+            list-style: none;
+            /* padding-left: 40px; */
+        }
+
+        #blogImg{
+            width: 100%;
+            /* margin-left: 50%; */
+            margin-top: 100px;
+        }
+
+        body h1{
+            transition-duration: text-decoration 2s;
+            cursor: pointer;
+        }
+        body h1:hover{
+            text-decoration: underline;
+        }
+
+        body p{
+            position: relative;
+            margin: 25px;
+            line-height: 30px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        ul img{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            width: 40px;
+            margin-top: 15px;
+            margin-left: 60px;
+            margin-bottom: 15px;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .share{
+            position: absolute;
+            background-color: #fff;
+            top: 100px;
+            left: 85%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lamborghini expands footprint in Sweden</h1>    
+
+    <img src="/Mp/2.webp" id="blogImg">
+
+    <p>Sant’Agata Bolognese/Sweden, May 10, 2022 – Automobili Lamborghini has officially opened a new showroom in Stockholm: this second dealership for Sweden in the capital joins Lamborghini’s first successful franchised location in Malmö, in the south of the country. Both dealerships are operated by Semler Premium, a specialist luxury and super sports automotive retail group.
+
+        “This is an important expansion for Lamborghini in our Scandinavian market, which has seen a strong and consistent growth in sales and brand enthusiasm over the last decade,” said Francesco Cresci, Automobili Lamborghini EMEA Regional Director, who attended the showroom’s official inauguration event attended by over 100 invited clients and VIPs. “This second dealership creates an expansive Lamborghini environment for our growing number of Swedish clients, who are enthusiastic about the Huracán Tecnica unveiled here as well as our super sports models and of course, the Urus Super SUV.”
+        
+        Housed in a brand-new facility, the new Stockholm showroom and aftersales center are situated just north of Stockholm off highway E4, making it easy to access from both the city center and Arlanda airport.
+        
+        “Our new dealership in Stockholm is only the beginning of our investment in the Scandinavian market. We’re seeing increasing demand for Lamborghini products in our region, and our new showroom brings the experience closer to both existing and future Scandinavian Lamborghini owners,” commented Johan Mårtensson, Country Manager at Semler Premium Sweden, authorized dealer.
+        
+        The new 424-square meter showroom is designed as a 360-degree experience for the car enthusiast. Lamborghini-trained experts guide customers through a wide range of new and pre-owned Lamborghini models with a special area for Ad Personam, the customization program that lets owners personalize their new car with virtually limitless paint possibilities as well as leathers, custom stitching, carbon fiber elements and many more exclusive options. The new dealership’s authorized service center also provides owners in the region with full aftersales facilities.
+        
+        “Our ambition with the Stockholm showroom is to create the ultimate destination for the existing and future Lamborghini enthusiast. It’s an experience center where we welcome prospective clients and those wanting to appreciate the fantastic sports cars in Lamborghini’s range: it’s a place where you can find inspiration for your future dream car,” added Johan Mårtensson.
+        
+        There are now 74 Lamborghini Dealerships in the EMEA region, with 179 at a global level.</p>
+
+<div class="share" id="share">
+    <p>Share It Using</p>
+    <ul>
+        <!-- <li><img src="/css/1.png"></li> -->
+        <li><img src="/css/2.png"></li>
+        <li><img src="/css/3.jpg"></li>
+        <li><img src="/css/4.png"></li>
+        <li><img src="/css/5.png"></li>
+        <li><img src="/css/6.jpg"></li>
+    </ul>
+</div>
+
+</body>
+
+<script>
+    let share = document.getElementById('share');
+    window.addEventListener('scroll',() => {
+        let svalue = window.scrollY;
+        share.style.top = svalue+100 + 'px';
+    });
+</script>
+
+
+</html>
